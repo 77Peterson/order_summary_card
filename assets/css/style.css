@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --link-color: hsl(228, 45%, 44%);
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+    align-items: center;
+    background: var(--very-pale-blue);
+    background-image: url(/assets/images/pattern-background-desktop.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    background: #fff;
+    border-radius: 1.25rem;
+    box-shadow: 0px 7px 15px var(--dark-blue);
+    height: 700px;
+    width: 450px;
+}
+
+.hero {
+    background-image: url(/assets/images/illustration-hero.svg);
+    border-radius: 1.25rem 1.25rem 0 0;
+    height: 220px;
+    width: 450px;
+}
+
+.info {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 45px;
+}
+
+.info h1 {
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 37px;
+}
+
+.info p {
+    color: var(--desaturated-blue);
+    font-size: 16px;
+    font-weight: 500;
+    height: 72px;
+    line-height: 26px;
+    margin-top: 1rem;
+    text-align: center;
+    width: 300px;
+}
+
+.plan {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    border-radius: 1rem;
+    background: var(--very-pale-blue);
+    height: 95px;
+    margin: 25px 50px 36px;
+    width: 350px;
+}
+
+.plan img {
+    height: 48px;
+    margin: auto 10px;
+    width: 48px;
+}
+
+.plan span {
+    margin: auto 10px;
+}
+
+.annual_plan {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 22px;
+}
+
+.price {
+    color: var(--desaturated-blue);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 22px;
+}
+
+.plan a {
+    margin: auto 2rem auto auto;
+}
+
+button {
+    color: var(--very-pale-blue);
+    border: none;
+    border-radius: 10px;
+    background: var(--bright-blue);
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.25rem;
+    height: 50px;
+    margin: 25px 50px 30px;
+    width: 345px;
+}
+
+.cancel_link{
+    display: flex;
+    justify-content: center;
+    color: var(--desaturated-blue);
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.attribution { 
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    font-size: .75rem;
+    height: 60px;
+    text-align: center;
+}
+
+.attribution a {
+    color: var(--link-color); 
+}
+
+
+/* 
+Mobile: 375px
+Desktop: 1440px
+*/
